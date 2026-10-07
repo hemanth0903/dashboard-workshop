@@ -77,3 +77,10 @@ How we will know it is done and right. Each one is something we can check, not a
 
 Fill this in as you build: anything that will need attention later, such as a key that
 expires or a data source that changes. Include a plan for dependencies that will need to be updated.
+
+## Setup check (done before the plan)
+
+A one-page "Hello, world" site (`src/index.md`) that proves the tools work: Node.js 24 is
+installed, Observable Framework builds the site to `dist/`, the preview runs at
+http://127.0.0.1:3000, and the page follows the design system's default tokens in light and
+dark mode. It is not part of the dashboard and gets replaced once the plan above is filled in.

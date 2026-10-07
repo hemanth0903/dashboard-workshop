@@ -1,0 +1,28 @@
+/* Framework's default layout, then the workshop design tokens on top. */
+@import url("observablehq:default.css");
+@import url("observablehq:theme-air.css") (prefers-color-scheme: light);
+@import url("observablehq:theme-near-midnight.css") (prefers-color-scheme: dark);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono&display=swap");
+@import url("../design-system/tokens.css");
+
+/* Map the tokens onto Framework's own theme variables, so every page follows them. */
+:root {
+  --theme-background: var(--color-background);
+  --theme-background-alt: var(--color-surface);
+  --theme-foreground: var(--color-text);
+  --theme-foreground-muted: var(--color-text-muted);
+  --theme-foreground-focus: var(--color-accent);
+  --sans-serif: var(--font-sans);
+  --monospace: var(--font-mono);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font: var(--text-body);
+}
+
+h1 {
+  font: var(--text-page-title);
+  color: var(--color-text);
+}
